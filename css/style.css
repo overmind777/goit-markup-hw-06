@@ -361,8 +361,6 @@ body {
     letter-spacing: 0.72px;
     text-transform: capitalize;
 }
-.mobile-menu-list-item {
-}
 
 .mobile-link {
     color: var(--color-2E2F42);
@@ -384,8 +382,7 @@ body {
     margin-bottom: 48px;
     gap: 40px;
 }
-.mobile-address-list-item {
-}
+
 .mobile-tel-link {
     color: var(--color-4d5ae5);
     font-size: 36px;
@@ -431,10 +428,6 @@ body {
 @media only screen and (min-resolution: 192dpi) {
     .hero {
         background-image: url("../images/jpg/hero/hero-bg_mob@2x.jpg");
-    }
-}
-@media only screen and (min-width: 768px) {
-    .hero {
     }
 }
 
@@ -683,9 +676,6 @@ body {
         padding-top: 60px;
         padding-bottom: 60px;
     }
-}
-
-.customers-container {
 }
 
 .customers-title {
@@ -1026,18 +1016,10 @@ body {
         padding: 100px 0;
     }
 }
-@media only screen and (min-width: 1158px) {
-    .footer {
-    }
-}
 
 .footer-container {
     display: flex;
     flex-wrap: wrap;
-}
-@media only screen and (min-width: 768px) {
-    .footer-container {
-    }
 }
 @media only screen and (min-width: 1158px) {
     .footer-container {
@@ -1233,9 +1215,6 @@ body {
 
 .logo-studio {
     color: var(--color-2E2F42);
-}
-
-.subscribe-label {
 }
 
 .subscribe-label-input {
