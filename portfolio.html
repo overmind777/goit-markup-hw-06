@@ -68,6 +68,16 @@
                         </li>
                     </ul>
                 </address>
+                <button
+                    class="header-menu-btn menu-toggle js-open-menu"
+                    aria-expanded="false"
+                    aria-controls="mobile-menu"
+                >
+                    <svg class="" width="32" height="22">
+                        <use href="./images/icons.svg#icon-mob-menu"></use>
+                    </svg>
+                </button>
+            </div>
             </div>
         </header>
         <main>
@@ -108,7 +118,7 @@
                             <a class="portfolio-list-link link" href="">
                                 <div class="overlay">
                                     <img
-                                        src="./images/jpg/bank_app.jpg"
+                                        src="/images/jpg/portfolio/img-1_mob.jpg"
                                         alt="Bank App"
                                         width="360"
                                         class="overlay-img"
@@ -133,7 +143,7 @@
                             <a class="portfolio-list-link link" href="">
                                 <div class="overlay">
                                     <img
-                                        src="./images/jpg/cashless_payment.jpg"
+                                        src="./images/jpg/portfolio/img-2_mob.jpg"
                                         alt="Cashless Payment"
                                         width="360"
                                     />
@@ -156,7 +166,7 @@
                             <a class="portfolio-list-link link" href="">
                                 <div class="overlay">
                                     <img
-                                        src="./images/jpg/meditation_app.jpg"
+                                        src="./images/jpg/portfolio/img-3_mob.jpg"
                                         alt="Meditation App"
                                         width="360"
                                     />
@@ -179,7 +189,7 @@
                             <a class="portfolio-list-link link" href="">
                                 <div class="overlay">
                                     <img
-                                        src="./images/jpg/taxi_service.jpg"
+                                        src="./images/jpg/portfolio/img-4_mob.jpg"
                                         alt="Taxi Srvises"
                                         width="360"
                                     />
@@ -202,7 +212,7 @@
                             <a class="portfolio-list-link link" href="">
                                 <div class="overlay">
                                     <img
-                                        src="./images/jpg/screen_illustrations.jpg"
+                                        src="./images/jpg/portfolio/img-5-mob.jpg"
                                         alt="Screen Illustrations"
                                         width="360"
                                     />
@@ -225,7 +235,7 @@
                             <a class="portfolio-list-link link" href="">
                                 <div class="overlay">
                                     <img
-                                        src="./images/jpg/online_courses.jpg"
+                                        src="./images/jpg/portfolio/img-6_mob.jpg"
                                         alt="Online Courses"
                                         width="360"
                                     />
@@ -248,7 +258,7 @@
                             <a class="portfolio-list-link link" href="">
                                 <div class="overlay">
                                     <img
-                                        src="./images/jpg/instagram_storis.jpg"
+                                        src="./images/jpg/portfolio/img-7_mob.jpg"
                                         alt="Instagram Stories"
                                         width="360"
                                     />
@@ -271,7 +281,7 @@
                             <a class="portfolio-list-link link" href="">
                                 <div class="overlay">
                                     <img
-                                        src="./images/jpg/organic_food.jpg"
+                                        src="./images/jpg/portfolio/img-8_mob.jpg"
                                         alt="Organic Food"
                                         width="360"
                                     />
@@ -294,7 +304,7 @@
                             <a class="portfolio-list-link link" href="">
                                 <div class="overlay">
                                     <img
-                                        src="./images/jpg/fresh_coffee.jpg"
+                                        src="./images/jpg/portfolio/img-9_mob.jpg"
                                         alt="Fresh Coffee"
                                         width="360"
                                     />
@@ -335,12 +345,12 @@
                         <li class="social-list">
                             <a href="" class="footer-social-link social-link">
                                 <svg
-                                    width="24"
-                                    height="24"
+                                    width="40"
+                                    height="40"
                                     class="footer-social-svg"
                                 >
                                     <use
-                                        href="./images/icons.svg#icon-instagram"
+                                        href="./images/icons.svg#icon-mobile-instagram"
                                     ></use>
                                 </svg>
                             </a>
@@ -348,12 +358,12 @@
                         <li class="social-list">
                             <a href="" class="footer-social-link social-link">
                                 <svg
-                                    width="24"
-                                    height="24"
+                                    width="40"
+                                    height="40"
                                     class="footer-social-svg"
                                 >
                                     <use
-                                        href="./images/icons.svg#icon-twitter"
+                                        href="./images/icons.svg#icon-mobile-twitter"
                                     ></use>
                                 </svg>
                             </a>
@@ -361,12 +371,12 @@
                         <li class="social-list">
                             <a href="" class="footer-social-link social-link">
                                 <svg
-                                    width="24"
-                                    height="24"
+                                    width="40"
+                                    height="40"
                                     class="footer-social-svg"
                                 >
                                     <use
-                                        href="./images/icons.svg#icon-facebook"
+                                        href="./images/icons.svg#icon-mobile-facebook"
                                     ></use>
                                 </svg>
                             </a>
@@ -374,12 +384,12 @@
                         <li class="social-list">
                             <a href="" class="footer-social-link social-link">
                                 <svg
-                                    width="24"
-                                    height="24"
+                                    width="40"
+                                    height="40"
                                     class="footer-social-svg"
                                 >
                                     <use
-                                        href="./images/icons.svg#icon-linkedin"
+                                        href="./images/icons.svg#icon-mobile-linkedin"
                                     ></use>
                                 </svg>
                             </a>
@@ -409,5 +419,82 @@
                 </div>
             </div>
         </footer>
+        <div class="menu-container js-menu-container" id="mobile-menu">
+            <button class="menu-toggle js-close-menu">
+                <svg class="close-svg" width="24" height="24">
+                    <use href="./images/icons.svg#close"></use>
+                </svg>
+            </button>
+
+            <ul class="mobile-menu-list list">
+                <li class="mobile-menu-list-item">
+                    <a href="./index.html" class="mobile-link link">Studio</a>
+                </li>
+                <li class="mobile-menu-list-item">
+                    <a
+                        href="./portfolio.html"
+                        class="mobile-link focus-link link"
+                        >Portfolio</a
+                    >
+                </li>
+                <li class="mobile-menu-list-item">
+                    <a href="#" class="mobile-link link">Contacts</a>
+                </li>
+            </ul>
+            <ul class="mobile-address-list list">
+                <li class="mobile-address-list-item">
+                    <a class="mobile-tel-link" href="">+11 (000) 111-11-11</a>
+                </li>
+                <li class="mobile-address-list-item">
+                    <a class="mobile-mail-link" href="">info@devstudio.com</a>
+                </li>
+            </ul>
+            <ul class="social-list list">
+                <li class="social-list-item">
+                    <a class="mobile-social-link social-link" href="">
+                        <svg class="social-svg" width="40" height="40">
+                            <use
+                                href="./images/icons.svg#icon-mobile-instagram"
+                            ></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-list-item">
+                    <a class="mobile-social-link social-link" href="">
+                        <svg class="social-svg" width="40" height="40">
+                            <use
+                                href="./images/icons.svg#icon-mobile-twitter"
+                            ></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-list-item">
+                    <a class="mobile-social-link social-link" href="">
+                        <svg class="social-svg" width="40" height="40">
+                            <use
+                                href="./images/icons.svg#icon-mobile-facebook"
+                            ></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-list-item">
+                    <a class="mobile-social-link social-link" href="">
+                        <svg class="social-svg" width="40" height="40">
+                            <use
+                                href="./images/icons.svg#icon-mobile-linkedin"
+                            ></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- SCRIPTS -->
+        <script
+            defer
+            src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+            integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+            crossorigin="anonymous"
+        ></script>
+        <script defer src="./js/mobile-menu.js"></script>
     </body>
 </html>
