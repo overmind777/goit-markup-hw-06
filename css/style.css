@@ -112,13 +112,7 @@ body {
 }
 
 .section {
-    margin-bottom: 96px;
     background-color: var(--color-FFFFFF);
-}
-@media only screen and (min-width: 1158px) {
-    .section {
-        margin-bottom: 120px;
-    }
 }
 
 .container {
@@ -126,6 +120,7 @@ body {
     max-width: 428px;
     margin-left: auto;
     margin-right: auto;
+    padding: 0 16px;
 }
 @media only screen and (min-width: 768px) {
     .container {
@@ -136,6 +131,11 @@ body {
     .container {
         max-width: 1128px;
     }
+}
+
+.social-list-item {
+    width: 40px;
+    height: 40px;
 }
 
 .social-link {
@@ -227,25 +227,27 @@ body {
 }
 @media only screen and (min-width: 768px) {
     .address {
-        display: flex;
+        display: block;
         margin-left: auto;
     }
 }
 @media only screen and (min-width: 1158px) {
+}
+@media only screen and (min-width: 768px) {
     .address-list {
         display: flex;
-        gap: 40px;
+        flex-direction: column;
+        gap: 12px;
     }
 }
 
 .address-link {
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.32px;
     color: var(--color-434455);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-style: normal;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.48px;
 }
 
 .address-link:hover,
@@ -427,22 +429,46 @@ body {
 }
 @media only screen and (min-resolution: 192dpi) {
     .hero {
-        background-image: url("../images/jpg/hero/hero-bg_mob@2x.jpg");
+        background-image: linear-gradient(
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)
+            ),
+            url("../images/jpg/hero/hero-bg_mob@2x.jpg");
     }
 }
 
 .hero-container {
     display: block;
+    max-width: 320px;
+}
+@media only screen and (min-width: 768px) {
+    .hero-container {
+        max-width: 496px;
+    }
 }
 
 .hero-title {
-    max-width: 496px;
-    font-size: 56px;
-    line-height: 1.07;
-    text-align: center;
-    letter-spacing: 0.02em;
+    margin-bottom: 72px;
     color: var(--color-FFFFFF);
-    margin: 0 auto 48px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+}
+@media only screen and (min-width: 768px) {
+    .hero-title {
+        margin-bottom: 36px;
+        font-size: 56px;
+        line-height: 60px;
+        letter-spacing: 1.12px;
+    }
+}
+@media only screen and (min-width: 1158px) {
+    .hero-title {
+        margin-bottom: 48px;
+    }
 }
 
 .hero-button {
@@ -474,6 +500,14 @@ body {
   | Block description
   |============================
 */
+.description {
+    padding: 96px 0;
+}
+@media only screen and (min-width: 1158px) {
+    .description {
+        padding: 120px 0;
+    }
+}
 
 .description-container {
     padding-left: 16px;
@@ -513,6 +547,7 @@ body {
     width: 396px;
     display: flex;
     flex-direction: column;
+    gap: 8px;
 }
 @media only screen and (min-width: 768px) {
     .description-list-item {
@@ -563,6 +598,19 @@ body {
     }
 }
 
+.description-text {
+    color: var(--color-434455);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+}
+@media only screen and (min-width: 1158px) {
+    .description-text {
+        font-weight: 400;
+    }
+}
+
 /**
   |============================
   | Block products
@@ -603,17 +651,16 @@ body {
 }
 
 .team-container {
-    margin: 96px 66px;
-}
-@media only screen and (min-width: 768px) {
-    .team-container {
-        margin: 96px 92px;
-    }
+    padding: 96px 0;
 }
 @media only screen and (min-width: 1158px) {
     .team-container {
         margin: 120px 156px;
     }
+}
+
+.team-title {
+    margin-bottom: 72px;
 }
 
 .team-list {
@@ -626,6 +673,7 @@ body {
     .team-list {
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
         row-gap: 64px;
         column-gap: 24px;
     }
@@ -633,19 +681,16 @@ body {
 
 .team-list-item {
     width: 264px;
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
 
     border-radius: 0px 0px 4px 4px;
-    background: var(--white, #fff);
+    background: var(--color-FFFFFF);
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
         0px 1px 1px 0px rgba(46, 47, 66, 0.16),
         0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 @media only screen and (min-width: 768px) {
     .team-list-item {
-        width: calc((100% - 24px) / 2);
+        width: 264px;
     }
 }
 @media only screen and (min-width: 1158px) {
@@ -658,7 +703,24 @@ body {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    margin-bottom: 32px;
+}
+
+.employee {
+    text-align: center;
+    color: var(--color-2E2F42);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+}
+
+.paragraph-center {
+    color: var(--color-434455);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.32px;
 }
 
 /**
@@ -678,6 +740,12 @@ body {
     }
 }
 
+@media only screen and (min-width: 768px) {
+    .customers-container {
+        padding: 0;
+    }
+}
+
 .customers-title {
     margin-bottom: 72px;
 }
@@ -686,6 +754,7 @@ body {
     flex-wrap: wrap;
     row-gap: 72px;
     column-gap: 16px;
+    justify-content: center;
 }
 @media only screen and (min-width: 768px) {
     .customers-list {
@@ -700,11 +769,12 @@ body {
 }
 
 .customers-list-item {
-    width: calc((100% - 16px) / 2);
+    width: 189px;
+    height: 88px;
 }
 @media only screen and (min-width: 768px) {
     .customers-list-item {
-        width: calc((100% - 48px) / 3);
+        width: 168px;
     }
 }
 @media only screen and (min-width: 1158px) {
@@ -1019,7 +1089,13 @@ body {
 
 .footer-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+}
+@media only screen and (min-width: 768px) {
+    .footer-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }
 @media only screen and (min-width: 1158px) {
     .footer-container {
@@ -1033,13 +1109,12 @@ body {
 .footer-left {
     width: 264px;
     display: block;
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 72px;
 }
 @media only screen and (min-width: 768px) {
     .footer-left {
-        margin-left: 0;
         margin-right: 24px;
     }
 }
@@ -1060,7 +1135,6 @@ body {
 @media only screen and (min-width: 768px) {
     .footer-social {
         margin-left: 0;
-        margin-right: 164px;
 
         text-align: start;
     }
@@ -1086,15 +1160,11 @@ body {
 }
 
 .subscribe-wrapper {
-    width: 453px;
-    margin-left: auto;
-    margin-right: auto;
-
     text-align: center;
 }
 @media only screen and (min-width: 768px) {
     .subscribe-wrapper {
-        margin-left: 0;
+        margin-left: 108px;
         margin-right: 0;
         margin-top: auto;
 
@@ -1120,21 +1190,26 @@ body {
 
 .subscribe-form {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     gap: 24px;
 }
 @media only screen and (min-width: 768px) {
     .subscribe-form {
+        flex-direction: row;
         flex-wrap: nowrap;
         justify-content: flex-start;
     }
 }
+@media only screen and (min-width: 1158px) {
+    .subscribe-form {
+        margin-left: auto;
+    }
+}
 
 .subscribe-input {
-    width: 398px;
+    min-width: 189px;
     height: 40px;
-    flex-shrink: 0;
     padding-left: 16px;
 
     border-radius: 4px;
@@ -1148,16 +1223,6 @@ body {
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.48px;
-
-    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-
-    border: 1px solid var(--color-FFFFFF);
-    background-color: transparent;
-    font-size: 12px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: var(--color-FFFFFF); */
 }
 @media only screen and (min-width: 768px) {
     .subscribe-input {
@@ -1233,11 +1298,9 @@ body {
 }
 
 .button {
-    display: inline-flex;
+    width: 165px;
     padding: 8px 24px;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
+    margin: 0 auto;
 
     border: none;
     border-radius: 4px;
@@ -1252,6 +1315,12 @@ body {
     letter-spacing: 0.64px;
 
     cursor: pointer;
+}
+@media only screen and (min-width: 768px) {
+    .button {
+        display: flex;
+        gap: 16px;
+    }
 }
 
 .subscribe-button-svg {
@@ -1379,21 +1448,12 @@ body {
     bottom: -1px;
 }
 
-.center {
-    text-align: center;
-}
-
 .background {
     background-color: var(--color-f4f4fd);
 }
 
 .team-list-item-name {
     padding: 32px 0;
-}
-
-.paragraph-center {
-    text-align: center;
-    margin-bottom: 8px;
 }
 
 .main-section {
