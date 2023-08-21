@@ -124,12 +124,12 @@ body {
 }
 @media only screen and (min-width: 768px) {
     .container {
-        max-width: 736px;
+        max-width: 768px;
     }
 }
 @media only screen and (min-width: 1158px) {
     .container {
-        max-width: 1128px;
+        max-width: 1158px;
     }
 }
 
@@ -354,6 +354,7 @@ body {
     display: flex;
     flex-direction: column;
     margin-top: 80px;
+    margin-bottom: 284px;
     gap: 40px;
 
     color: var(--color-404bbf);
@@ -440,6 +441,7 @@ body {
 .hero-container {
     display: block;
     max-width: 320px;
+    padding: 0;
 }
 @media only screen and (min-width: 768px) {
     .hero-container {
@@ -742,7 +744,7 @@ body {
 
 @media only screen and (min-width: 768px) {
     .customers-container {
-        padding: 0;
+        padding: 0 108px;
     }
 }
 
