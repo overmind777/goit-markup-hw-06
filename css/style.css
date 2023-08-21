@@ -499,6 +499,7 @@ body {
 }
 @media only screen and (min-width: 768px) {
     .hero-title {
+        width: 496px;
         margin-bottom: 36px;
         font-size: 56px;
         line-height: 60px;
